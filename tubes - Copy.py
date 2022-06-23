@@ -8,7 +8,7 @@ from tkinter import messagebox as msg
 window1 = tk.Tk()
 
 window1.title('BTC Conventer')
-window1.geometry("800x400")
+window1.geometry("750x800")
 
 
 #String_Var
@@ -134,28 +134,28 @@ def btcidr_cur():
 
 
 #LABEL
-Label(window1, text='Silahkan pilih menu yang tersedia').grid(row=0, column = 1)
-Label(window1, text='Men-Konversi dari 1 koin BTC ke Berbagai mata uang (USD, EUR, IDR)').grid(row=1)
-Label(window1, text='Men-Konversi dari Nominal koin BTC ke Berbagai mata uang (USD, EUR, IDR)').grid(row=1, column=1)
-Label(window1, text='Men-Konversi dari Berbagai mata uang (USD, EUR, IDR) ke Koin BTC ').grid(row=1, column=2)
+Label(window1, text='Silahkan pilih menu yang tersedia', font=('Helvetica', 14)).grid(row=0, column = 1, pady=4)
+Label(window1, text='Men-Konversi dari 1 koin BTC ke Berbagai mata uang (USD, EUR, IDR)', font=('Helvetica', 14)).grid(row=1, column=1, pady=4)
+Label(window1, text='Men-Konversi dari Nominal koin BTC ke Berbagai mata uang (USD, EUR, IDR)', font=('Helvetica', 14)).grid(row=6, column=1, pady=4)
+Label(window1, text='Men-Konversi dari Berbagai mata uang (USD, EUR, IDR) ke Koin BTC ', font=('Helvetica', 14)).grid(row=11, column=1, pady=4)
 
 
-my_label1 = Label(window1,textvariable = my_string_var1).grid(row=21, column = 1)
+my_label1 = Label(window1,textvariable = my_string_var1, font=('Helvetica', 14)).grid(row=21, column = 1)
 my_string_var1.set("HASIL DATA AKAN DITAMPILKAN DISINI")
 
 
 #BUTTON
-tk.Button(window1,text = 'BTC(฿) to EUR(€)',command=eurbtc).grid(row=4 , column = 0)
-tk.Button(window1,text = 'BTC(฿) to USD($)',command=usdbtc).grid(row=5 , column = 0)
-tk.Button(window1,text = 'BTC(฿) to IDR(Rp)',command=idrbtc).grid(row=6 , column = 0)
+tk.Button(window1,text = 'BTC(฿) to EUR(€)', font=('Helvetica', 14), command=eurbtc).grid(row=2 , column = 1, pady=4)
+tk.Button(window1,text = 'BTC(฿) to USD($)', font=('Helvetica', 14),command=usdbtc).grid(row=3 , column = 1, pady=4)
+tk.Button(window1,text = 'BTC(฿) to IDR(Rp)', font=('Helvetica', 14),command=idrbtc).grid(row=4 , column = 1, pady=4)
 
-tk.Button(window1,text = 'Nominal BTC(฿) to EUR(€)',command=eurbtc_cur).grid(row=4 , column = 1)
-tk.Button(window1,text = 'Nominal BTC(฿) to USD($)',command=usdbtc_cur).grid(row=5 , column = 1)
-tk.Button(window1,text = 'Nominal BTC(฿) to IDR(Rp)',command=idrbtc_cur).grid(row=6 , column = 1)
+tk.Button(window1,text = 'Nominal BTC(฿) to EUR(€)', font=('Helvetica', 14),command=eurbtc_cur).grid(row=7, column = 1, pady=4)
+tk.Button(window1,text = 'Nominal BTC(฿) to USD($)', font=('Helvetica', 14),command=usdbtc_cur).grid(row=8, column = 1, pady=4)
+tk.Button(window1,text = 'Nominal BTC(฿) to IDR(Rp)', font=('Helvetica', 14),command=idrbtc_cur).grid(row=9 , column = 1, pady=4)
 
-tk.Button(window1,text = 'Nominal EUR(€) to BTC(฿)',command=btceur_cur).grid(row=4 , column = 2)
-tk.Button(window1,text = 'Nominal USD($) to BTC(฿)',command=btcusd_cur).grid(row=5 , column = 2)
-tk.Button(window1,text = 'Nominal IDR(Rp) to BTC(฿)',command=btcidr_cur).grid(row=6 , column = 2)
+tk.Button(window1,text = 'Nominal EUR(€) to BTC(฿)', font=('Helvetica', 14),command=btceur_cur).grid(row=12 , column = 1, pady=4)
+tk.Button(window1,text = 'Nominal USD($) to BTC(฿)', font=('Helvetica', 14),command=btcusd_cur).grid(row=13 , column = 1, pady=4)
+tk.Button(window1,text = 'Nominal IDR(Rp) to BTC(฿)', font=('Helvetica', 14),command=btcidr_cur).grid(row=14 , column = 1, pady=4)
 
 
 
