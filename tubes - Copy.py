@@ -92,20 +92,20 @@ try:
  def submiteur1():
      b = BtcConverter()
      hasileur1 = nominaleur1.get()
-     totaleur1 = b.convert_to_btc(int(hasileur1), 'EUR')
+     totaleur1 = b.convert_to_btc(float(hasileur1), 'EUR')
      my_string_var1.set(f"Hasil Konversi €{hasileur1} EUR ke ke BTC adalah sebesar ฿.{totaleur1}")
 
  def submitusd1():
      b = BtcConverter()
      hasilusd1 = nominalusd1.get()
-     totalusd1 = b.convert_to_btc(int(hasilusd1), 'USD')
+     totalusd1 = b.convert_to_btc(float(hasilusd1), 'USD')
      my_string_var1.set(f"Hasil Konversi €{hasilusd1} EUR ke ke BTC adalah sebesar ฿.{totalusd1}")
 
 
  def submitidr1():
      b = BtcConverter()
      hasilidr1 = nominalidr1.get()
-     totalidr1 = b.convert_to_btc(int(hasilidr1), 'IDR')
+     totalidr1 = b.convert_to_btc(float(hasilidr1), 'IDR')
      my_string_var1.set(f"Hasil Konversi {hasilidr1} EUR ke ke BTC adalah sebesar ฿.{totalidr1}")
 
 
